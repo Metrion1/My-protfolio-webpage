@@ -17,36 +17,45 @@
         <div id="mySidebar" class="sidebar">
             <a href="#" id="closebtn" class="closebtn">&times;</a>
             <a href="about.html">About</a>
-            <a href="coding-projects.html">Projects</a>
+            <!-- <a href="projects.html">Projects</a> -->
+            <button class="dropdown-btn">Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="coding-projects.HTML">coding</a>
+                <a href="clothing-projects.HTML">clothing</a>
+                <a href="writing-projects.HTML">writing</a>
+            </div>
             <a href="goals-timeline.html">Goals and Timeline</a>
             <a href="contact.html">Contact</a>
         </div>
 
         <div id="main">
-            <button id="openbtn" class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+            <button id="openbtn" class="openbtn" onclick="openNav()">&#9776; Navigation Menu</button>
             <h2>Where do you want to go?</h2>
             <p>Click above to open the Navigation Menu</p>
         </div>
-        <!-- <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="coding-projects.html">Projects</a></li>
-                <li><a href="clothing-projects.html">Clothing</a></li>
-                <li><a href="writing-projects.html">Writing</a></li>
-                <li><a href="goals-timeline.html">Goals & Timeline</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav> -->
     </header>
     <main>
         <section>
-
             <h2>Coding Experience</h2>
-            <p>
-
-            </p>
-
-            <footer>
-
-            </footer>
+            <p>this is a sample paragraph for the Coding Experience section.</p>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-section">
+            <h4>Quick links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+        <section class="footer-section">
+            <h4>Contact Information</h4>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+            <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
+        </section>
+    </footer>
+</body>
+</html>
