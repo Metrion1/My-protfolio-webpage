@@ -139,66 +139,38 @@ nav ul li a {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-/*************************Media Queries*****************************/
-
-        /* Media Query for Large screens */
-        @media (min-width: 1281px) {
-          body {
-            background-color: yellow;
-          }
-        }
-
-        /* Media Query for Laptops and Desktops */
-        @media (min-width: 1025px) and (max-width: 1280px) {
-          body {
-            background-color: lightblue;
-          }
-        }
-
-        /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px) {
-          body {
-            background-color: pink;
-          }
-        }
-
-        /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
-          body {
-            background-color: teal;
-          }
-        }
-
 
 
 /*************************footer styles*****************************/
-footer .row {
-  display: flex;
+footer .container {
+display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .footer-dark {
-  flex-direction: row;
-  padding:50px 0;
-  color:#f0f9ff;
-  background-color:#282d32;
+flex-direction: row;
+  padding: 1.5rem 0;
+  color: #f0f9ff;
+  background-color: #282d32;
 }
 
 .footer-dark h3 {
-  margin-top:0;
-  margin-bottom:12px;
-  font-weight:bold;
-  font-size:16px;
+margin-top: 0;
+  margin-bottom: .8rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .footer-dark ul {
-  padding:0;
-  list-style:none;
-  line-height:1.6;
-  font-size:14px;
-  margin-bottom:0;
+  padding: 0rem;
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1rem;
+  margin-bottom: 0rem;
 }
 
 .footer-dark ul a {
@@ -235,6 +207,7 @@ footer .row {
 
 .footer-dark .item.social {
   text-align:center;
+  padding: 1rem;
 }
 
 @media (max-width:991px) {
@@ -264,8 +237,43 @@ footer .row {
 
 .footer-dark .copyright {
   text-align:center;
-  padding-top:24px;
-  opacity:0.3;
-  font-size:13px;
+  font-size: .8rem;
   margin-bottom:0;
 }
+
+/*************************Media Queries*****************************/
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+ body {
+            background-color: yellow;
+          }
+        }
+
+        /* Media Query for Laptops and Desktops */
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          body {
+            background-color: lightblue;
+          }
+        }
+
+        /* Media Query for Tablets Ipads portrait mode */
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body {
+            background-color: pink;
+          }
+        }
+
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+          body {
+            background-color: teal;
+          }
+        }
+
+        @media (max-width: 480px) {
+          body {
+            background-color: whitesmoke;
+          }
+        }
+
