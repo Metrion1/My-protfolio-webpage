@@ -141,21 +141,33 @@ nav ul li a {
 }
 /*************************Media Queries*****************************/
 
-        /* Media Query for Laptops and Desktops */
-        @media (min-width: 1025px) and (max-width: 1280px) {
+        /* Media Query for Large screens */
+        @media (min-width: 1281px) {
           body {
-            font-size: 1.2rem; /* Adjust the font size for larger screens */
+            background-color: yellow;
           }
         }
 
-        /* Media Query for Large screens */
-        @media (min-width: 1281px) {}
+        /* Media Query for Laptops and Desktops */
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          body {
+            background-color: lightblue;
+          }
+        }
 
         /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px) {}
+        @media (min-width: 768px) and (max-width: 1024px) {
+          body {
+            background-color: pink;
+          }
+        }
 
         /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {}
+        @media (min-width: 481px) and (max-width: 767px) {
+          body {
+            background-color: teal;
+          }
+        }
 
 
 
