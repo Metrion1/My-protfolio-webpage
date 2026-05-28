@@ -186,12 +186,12 @@ margin-top: 0;
 @media (max-width:767px) {
   .footer-dark .item:not(.social) {
     text-align:center;
-    padding-bottom:20px;
+    padding-bottom:1.5rem;
   }
 }
 
 .footer-dark .item.text {
-  margin-bottom:36px;
+  margin-bottom:2rem;
 }
 
 @media (max-width:767px) {
@@ -205,30 +205,28 @@ margin-top: 0;
   margin-bottom:0;
 }
 
-.footer-dark .item.social {
+footer .social {
   text-align:center;
   padding: 1rem;
+}
+
+footer .social > a {
+  font-size: 1.5rem;
+  border-radius:50%;
+  box-shadow:0 0 0 1px grey;
+  display: inline-block;
+  text-align:center;
+  margin: 0 1rem;
+  padding: 1rem;
+  width: 1rem;
+  opacity:0.75;
 }
 
 @media (max-width:991px) {
   .footer-dark .item.social {
     text-align:center;
-    margin-top:20px;
+    margin-top:1.5rem;
   }
-}
-
-.footer-dark .item.social > a {
-  font-size:20px;
-  width:36px;
-  height:36px;
-  line-height:36px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
-  margin:0 8px;
-  color:#fff;
-  opacity:0.75;
 }
 
 .footer-dark .item.social > a:hover {
