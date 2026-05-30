@@ -52,7 +52,14 @@ nav ul li a {
 }
 
 /*************************Link Styles*****************************/
-/*************************Image Styles*****************************/
+/*************************home page Styles*****************************/
+#home {
+  display: flex;
+  align-items: center;   /* vertically centers the image beside the text */
+  justify-content: center;
+  gap: 40px;             /* space between image and text block */
+  margin-top: 80px;      /* moves the whole section downward */
+}
 .headshot {
 position: center;
 width: 12rem;
@@ -62,7 +69,20 @@ overflow: hidden;    /* Clips the image edges */
 border: 4px solid black; /* Adds a bubble-like border outline */
 box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Adds a 3D depth effect */
 }
+/*****************************Clothing Project Styles*****************************/
 
+.clothing-content {
+    border-radius: 8px;
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: auto;
+    margin: 2rem 2rem;
+    width: fit-content;
+  }
 .clothing-pics {
   display: grid;
   /* Creates auto-fitting columns that are at least 250px wide */
