@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6{
 h1 {
   font-weight: 700;
   font-style: bold;
+  color: white;
 }
 
 h2 {
@@ -52,7 +53,7 @@ nav ul li a {
 
 /*************************Link Styles*****************************/
 /*************************Image Styles*****************************/
-.bg-image {
+.headshot {
 position: center;
 width: 12rem;
 height: 12rem;
@@ -63,10 +64,17 @@ box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Adds a 3D depth effect */
 }
 
 .clothing-pics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  /* Creates auto-fitting columns that are at least 250px wide */
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 0fr));
   gap: 1rem;
+  
+}
+.clothing-pics img {
+  width: 9rem;        /* Sets a unified width */
+  height: 14rem;       /* Sets a unified height */
+  object-fit: cover;   /* Crops the image cleanly to prevent distortion */
+  border-radius: 8rem;
 }
 /*************************Nav Styles*****************************/
 /* The sidebar menu */
