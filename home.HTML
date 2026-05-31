@@ -15,6 +15,15 @@
 
 <body>
     <header>
+    <div id="clock"></div>
+
+<script>
+  setInterval(() => {
+    const now = new Date();
+    document.getElementById("clock").textContent = now.toLocaleTimeString();
+  }, 1000);
+</script>
+
         <div id="mySidebar" class="sidebar">
             <a href="#" id="closebtn" class="closebtn">&times;</a>
             <a href="about.html">About</a>
@@ -38,6 +47,7 @@
 
     </header>
     <main>
+        
         <section id="home">
             <div class="headshot"><img src="clothing pics/default headshot.png" alt="Rohalio Newman's Headshot" width="200" height="250"
                 style="display: block; margin: 0 auto;"></div>

@@ -1,7 +1,5 @@
 
-
 document.addEventListener('DOMContentLoaded', function () {
-
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var i;
 
