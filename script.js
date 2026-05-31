@@ -1,5 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+
+    setInterval(() => {
+    const now = new Date();
+    document.getElementById("clock").textContent = now.toLocaleTimeString();
+  }, 1000);
+
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var i;
 
