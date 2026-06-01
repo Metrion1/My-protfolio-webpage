@@ -92,6 +92,15 @@ overflow: hidden;    /* Clips the image edges */
 border: 4px solid black; /* Adds a bubble-like border outline */
 box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Adds a 3D depth effect */
 }
+
+#typing-text {
+  color: #ff6347; /* Tomato color for the typing text */
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-right: 2px solid #ff6347; /* Simulates a cursor */
+  padding-right: 5px;
+  animation: blink-caret 0.75s step-end infinite; /* Blinking effect for the cursor */
+}
 /*****************************Clothing Project Styles*****************************/
 
 .clothing-content {
@@ -109,8 +118,8 @@ box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Adds a 3D depth effect */
 .clothing-pics {
   display: grid;
   /* Creates auto-fitting columns that are at least 250px wide */
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 0fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 0fr));
+  gap: 1rem 1rem; /* Adds space between the images */
   
 }
 .clothing-pics img {
