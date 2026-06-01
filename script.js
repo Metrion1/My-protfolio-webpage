@@ -2,34 +2,34 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   const words = ["Software Engineer", "Fashion Designer", "Author", "Inventor", "Web Developer"];
-let wordIndex = 0;
-let charIndex = 0;
+  let wordIndex = 0;
+  let charIndex = 0;
 
-function typeEffect() {
+  function typeEffect() {
     const target = document.getElementById("typing-text");
-  if (!target) return; // guard: stop if element isn't present on this page
+    if (!target) return; // guard: stop if element isn't present on this page
     const currentWord = words[wordIndex];
-    
-    if (charIndex < currentWord.length) {
-        target.textContent += currentWord.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeEffect, 100); // Speed of typing
-    } else {
-        // Pause at the end of the word, then clear and move to next
-        setTimeout(() => {
-            target.textContent = "";
-            charIndex = 0;
-            wordIndex = (wordIndex + 1) % words.length;
-            setTimeout(typeEffect, 500);
-        }, 2000);
-    }
-}
-// Only start the typing effect on pages that include the target element
-if (document.getElementById("typing-text")) {
-  typeEffect();
-}
 
-    setInterval(() => {
+    if (charIndex < currentWord.length) {
+      target.textContent += currentWord.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeEffect, 100); // Speed of typing
+    } else {
+      // Pause at the end of the word, then clear and move to next
+      setTimeout(() => {
+        target.textContent = "";
+        charIndex = 0;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(typeEffect, 500);
+      }, 2000);
+    }
+  }
+  // Only start the typing effect on pages that include the target element
+  if (document.getElementById("typing-text")) {
+    typeEffect();
+  }
+
+  setInterval(() => {
     const now = new Date();
     document.getElementById("clock").textContent = now.toLocaleTimeString();
   }, 1000);
