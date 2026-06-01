@@ -7,6 +7,7 @@ let charIndex = 0;
 
 function typeEffect() {
     const target = document.getElementById("typing-text");
+  if (!target) return; // guard: stop if element isn't present on this page
     const currentWord = words[wordIndex];
     
     if (charIndex < currentWord.length) {
@@ -23,7 +24,10 @@ function typeEffect() {
         }, 2000);
     }
 }
-typeEffect();
+// Only start the typing effect on pages that include the target element
+if (document.getElementById("typing-text")) {
+  typeEffect();
+}
 
     setInterval(() => {
     const now = new Date();
