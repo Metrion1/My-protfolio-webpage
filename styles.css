@@ -96,8 +96,8 @@ box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Adds a 3D depth effect */
 #typing-text {
   color: #ff6347; /* Tomato color for the typing text */
   font-weight: bold;
-  font-size: 1.2rem;
-  border-right: 2px solid #ff6347; /* Simulates a cursor */
+  font-size: 1.5rem;
+  border-right: 2px solid white; /* Simulates a cursor */
   padding-right: 5px;
   animation: blink-caret 0.75s step-end infinite; /* Blinking effect for the cursor */
 }
